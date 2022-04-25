@@ -1,0 +1,580 @@
+/*definir variáveis*/
+:root {
+    --roxo: rgb(134, 12, 201);
+    --preto: rgb(34, 34, 34);
+    --cinza: rgb(165, 160, 186);
+}
+
+/*zerar e definir elementos*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto);
+    color: white;
+    font-family: 'Arial', Times, serif;
+}
+
+/*1- cabeçalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 2rem;
+}
+
+header h1 {
+    color: var(--roxo);
+    font-family: 'Arial black';
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+header nav a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s all;
+
+    margin-left: 2rem;
+}
+
+header nav a:hover {
+    color: var(--roxo);
+}
+
+header .signUp {
+    background-color: var(--roxo);
+    font-weight: bold;
+    border: 0.15rem solid var(--roxo);
+    border-radius: 1rem;
+    padding:0.9rem;
+}
+
+header .signUp:hover {
+    color: white;
+}
+
+/*2- banner principal*/
+#main-banner {
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,0.60)), url(../img/main-banner1.jpg);
+    
+    height: 30rem;
+    background-position-y: 25%;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.main-container {
+    width: 40%;
+    
+    margin-left: 2rem;
+}
+
+.main-container .title {
+    text-align: justify;
+    font-size: 2.6rem;
+
+    margin-top: 15%;
+}
+
+.main-container .description {
+    margin-top: 0.4rem;
+}
+
+.main-container .description span {
+    font-style: italic;
+}
+
+.main-button button {
+    background-color: var(--roxo,.60);
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 15px;
+    border: none;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    
+    margin-right: 1rem;
+    margin-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.main-button button:hover {
+    background-color: rgba(0,0,0,.60);
+    color: white;
+}
+
+.main-button button i {
+    margin-right: 0.6rem;
+}
+
+/*3- seção procura*/
+.section-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 0;
+}
+
+.section-search .search-bar {
+    display: flex;
+    flex: row;
+
+    margin-bottom: 2rem;
+}
+
+.search-bar input {
+    border: 1px solid gray;
+    width: 30rem;
+    padding: 0.5rem;
+    padding-left: 0.8rem;
+}
+
+.search-bar button {
+    background: var(--preto);
+    color: white;
+    width: 2.5rem;
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-left: none;
+
+    cursor: pointer;
+}
+  
+.search-bar button:hover {
+    background: var(--preto);
+}
+
+.section-search nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+
+    margin-left: 2rem;
+    margin-right: 2rem;   
+}
+
+.section-search nav a:hover {
+    border-bottom: 7px solid var(--roxo);
+}
+
+/*-4- seção de informações*/
+.section-animes {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+/*4.1- owl carrousel*/
+.carousel-animes {
+    width: 71%;
+    padding: 0 3rem;
+    border-right: 0.1rem solid gray;
+}
+
+.carousel-animes h3 {
+    background-color: var(--roxo);
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.5rem 0;
+
+    margin-bottom: 1.3rem;
+}
+
+.owl-carousel {
+    margin-bottom: 4rem;
+}
+
+.box-anime {
+    display: block;
+    height: 21rem;
+}
+
+.owl-carousel p {
+    text-align: center;
+    font-weight: bold;
+
+    margin-top: 1rem;
+}
+
+/*4.2- menu de informações*/
+.column-info {
+    display: flex;
+    flex-direction: column;
+
+    width: 29%;
+    padding: 0 0.9rem;
+}
+
+.column-ranking {
+    margin-left: 1rem;
+    margin-right: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.column-title {
+    background-color: var(--roxo);
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.column-title h3 {
+    width: 70%;
+    margin-left: 0.4rem;
+}
+
+.column-title a {
+    background-color: rgb(132, 92, 126);
+    color: white;
+    font-size: small;
+    text-decoration: none;
+    border: 0.1rem solid var(--cinza);
+    padding: 0.2rem 0.2rem;
+    text-align: center;
+    width: 4rem;
+
+    margin-right: 0.2rem;
+}
+
+.ranking {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-left: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.ranking:hover {
+    font-weight: bold;
+}
+
+.ranking img {
+    height: 14%;
+    width: 16%;
+}
+
+.ranking-info {
+    margin-left: 1rem;
+}
+
+.ranking-info h4 {
+    margin-bottom: 0.5rem;
+}
+
+.ranking-info p {
+    color: rgb(173, 168, 202);
+}
+
+/*5- rodapé*/
+.footer-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 1rem 0;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 35%;
+    padding: 2rem;
+    border-bottom: 0.2rem solid var(--roxo);
+}
+
+.footer-contact img {
+    height: 10%;
+    width: 10%;
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.footer-politics {
+    display: flex;
+    flex-direction: row;
+    text-align: center;  
+    padding: 0.8rem;
+
+    margin-bottom: 1rem;
+}
+
+.footer-politics h6 {
+    color: var(--cinza);
+
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.footer-politics h6:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*tablet*/
+@media screen and (max-width: 1024px){
+    /*2- banner principal*/
+    .main-container {
+        width: 50%;
+    }
+
+    .main-container .description{
+        font-size: 17px;
+    }
+
+    /*3- owl carousel*/
+    .box-anime {
+        height: 20rem;
+    }
+
+    /*-4- seção de informações*/
+    /*4.2- menu de informações*/
+    .column-info {
+        padding: 0;
+    }
+
+    .column-title {
+        height: 2.9rem;
+    }
+
+    .column-title h3 {
+        width: 50%;
+    }
+    
+    .column-title a {
+        padding: 0.3rem 0rem;
+        text-align: center;
+
+        margin-right: 0.3rem;
+    }
+
+    /*5- rodapé*/
+    .footer-contact {
+        margin: 0;
+    }
+
+    .footer-contact {
+        width: 39%;
+        padding: 2rem;
+        border-bottom: 0.2rem solid var(--roxo);
+    }
+    
+    .footer-contact img {
+        height: 13%;
+        width: 13%;
+    }
+
+    .footer-politics {  
+        margin-bottom: 0rem;
+    }
+    
+    .footer-politics h6 {
+        color: var(--cinza);
+    
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 760px){
+    /*1- cabeçalho*/
+    header {
+        flex-direction: column;
+    }
+    
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    header nav {
+        margin-top: 0.5rem;
+    }
+
+    header nav a {
+        font-size: 17px;
+
+        margin-left: 1rem;
+    }
+
+    header .signUp {
+        background-color: var(--preto);
+        border: none;
+        padding: 0rem;
+        font-weight: normal;
+    }
+
+    /*2- banner principal*/
+    #main-banner {
+        background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,0.60)), url(../img/main-banner1.jpg);
+        
+        height: 60%;
+        background-position-y: 25%;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: flex-start;
+    }
+
+    .main-container {
+        width: 100%;
+
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .main-container .title {
+        text-align: center;
+        font-size: 2.6rem;
+    }
+
+    .main-container .description {
+        text-align: center;
+
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .main-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .main-button button {
+        width: 12rem;
+
+        margin: 0.8rem 0;
+    }
+
+    .main-button button i {
+        margin-right: 0.3rem;
+    }
+
+    /*3- seção procura*/
+    .section-search {
+        padding: 1.5rem 0;
+    }
+
+    .section-search .search-bar {
+        margin-bottom: 1rem;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .search-bar button {
+        width: 20%;
+    }
+
+    .section-search nav a {
+        font-size: 16px;
+
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;   
+    }
+
+    /*-4- seção de informações*/
+    .section-animes {
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 0.5rem;
+    }
+
+    /*4.1- owl carousel*/
+    .carousel-animes {
+        width: 100%;
+        padding: 0 1.2rem;
+    }
+    
+    .carousel-animes h3 {
+        font-size: 20px;
+        padding: 0.5rem 0;
+    }
+    
+    .owl-carousel {
+        margin-bottom: 4rem;
+    }
+    
+    .box-anime {
+        height: 25%;
+    }
+    
+    .owl-carousel p {
+        text-align: center;
+        font-weight: bold;
+    
+        margin-top: 1rem;
+    }
+
+    /*4.2- menu de informações*/
+    .column-info {
+        width: 100%;
+        padding: 0.2rem 1.2rem;
+    }
+
+    .column-ranking {
+        background-color: rgba(59, 26, 92, 0.361);
+
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .ranking {
+        margin-left: 0;
+    }
+
+    /*5- rodapé*/
+    .footer-banner {
+        margin: 0rem 0;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        width: 75%;
+        padding: 1rem;
+        border-bottom: 0.2rem solid var(--roxo);
+    }
+
+    .footer-contact img {
+        height: 10%;
+        width: 10%;
+
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}

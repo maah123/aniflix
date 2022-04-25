@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="style/main.css">
+    <!--owl carousel-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <title>ANIFLIX</title>
+</head>
+<body>
+    
+    <!--1- cabeçalho-->
+    <header>
+        <h1>Aniflix</h1>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="login.html">Login</a>
+            <a href="signUp.html" class="signUp">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <!--2- banner principal-->
+    <main id="main-banner">
+        <div class="main-container">
+            <h2 class="title">Spy x Family</h2>
+            <p class="description">A história acompanha um dos maiores espiões do mundo
+                    tendo que se infiltrar no país inimigo para eliminar uma figura
+                    importante do governo. Como forma de aproximação do seu alvo, ele
+                    precisa encontrar uma família, e por conta disso acaba adotando uma
+                    garota, e formando um acordo para se casar com uma mulher local.
+                    Entretanto, o que ele não imagina, é que a garota na verdade é uma
+                    <span>"esper"</span>, e sua nova esposa é uma assassina de aluguel.
+                    Assim, os três começam a morar juntos, tendo que esconder suas
+                    verdadeiras identidades uns dos outros. 
+            </p>
+            <div class="main-button">
+                <button role="button" onclick="trailer()">
+                    <i class="fa-solid fa-play"></i>
+                    Assistir agora
+                </button>
+                <a href="https://pt.wikipedia.org/wiki/Spy_%C3%97_Family">
+                    <button role="button">
+                        <i class="fa-solid fa-circle-info"></i>
+                        Mais informações
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!--3- seção procura-->
+    <section>
+        <section class="section-search">
+            <form class="search-bar">
+                <input type="text" name="placeholder" placeholder="Procurar">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <nav>
+                <a href="#">Todos</a>
+                <a href="#">Gênero</a>
+                <a href="#">Ranking</a>
+            </nav>
+        </section>
+    </section>
+
+    <!--4- seção de informações-->
+    <section>
+        <section class="section-animes">
+            <!--owl carrousel-->
+            <section class="carousel-animes">
+                <h3>Lançados Recente</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-anime" src="img/spy-family.jpg" alt="1mini1">
+                        <p>Spy Family</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/blue-period.jpg" alt="1mini2">
+                        <p>Blue Period</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/to-your-eternity-2.jpg" alt="1mini3">
+                        <p>To Your Eternity 2</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/86-2.jpg" alt="1mini4">
+                        <p>86 2</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/fruits-basket.jpg" alt="1mini5">
+                        <p>Fruits Basket Final</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/komi-san-cant-communicate-2.jpg" alt="1mini6">
+                        <p>Komi-san can't communicate 2</p>
+                    </div>
+                </div>
+                <h3>Mais Acessados Recente</h3>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img class="box-anime" src="img/attack-on-titan-4.jpg" alt="2mini1">
+                        <p>Attack on Titan 4</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/spy-family.jpg" alt="2mini2">
+                        <p>Spy Family</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/kingdom-4.jpg" alt="2mini3">
+                        <p>Kingdom 4</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/ousama-ranking.jpg" alt="2mini4">
+                        <p>Ousama Ranking</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/one-piece.jpg" alt="2mini5">
+                        <p>One Piece</p>
+                    </div>
+                    <div class="item">
+                        <img class="box-anime" src="img/komi-san-cant-communicate-2.jpg" alt="2mini6">
+                        <p>komi-san cant communicate 2</p>
+                    </div>
+                </div>
+            </section>
+            <aside class="column-info">
+                <div class="column-ranking">
+                    <div class="column-title">
+                        <h3>Melhores Avaliados</h3>
+                        <a href="#">Ver mais</a>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/world-trigger.jpg" alt="ranking1">
+                        <div class="ranking-info">
+                            <h4>World Trigger</h4>
+                            <p>nota: 9,4/10</p>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/link-click.jpg" alt="ranking2">
+                        <div class="ranking-info">
+                            <h4>Link Click</h4>
+                            <p>nota: 9,1/10</p>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/hunter-x-hunter.jpg" alt="ranking3">
+                        <div class="ranking-info">
+                            <h4>HunterxHunter (2011)</h4>
+                            <p>nota: 9/10</p>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/gintama.jpg" alt="ranking4">
+                        <div class="ranking-info">
+                            <h4>Gintama</h4>
+                            <p>nota: 8,8/10</p>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/kids-on-the-slope.jpg" alt="ranking5">
+                        <div class="ranking-info">
+                            <h4>Kids on the Slope</h4>
+                            <p>nota: 8,6/10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column-ranking">
+                    <div class="column-title">
+                        <h3>Em breve</h3>
+                        <a href="#">Ver mais</a>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/chainsaw-man.jpg" alt="upcoming1">
+                        <div class="ranking-info">
+                            <h4>Chainsaw Man</h4>
+                            <p>Estréia: Indefinido</p>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/overload-iv.jpg" alt="upcoming2">
+                        <div class="ranking-info">
+                            <h4>Overload IV</h4>
+                            <p>Estréia: Julho/2022</p>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/my-hero-academy.jpg" alt="upcoming3">
+                        <div class="ranking-info">
+                            <h4>My Hero Academy</h4>
+                            <p>Estréia: Outubro/2022</p>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/viland-saga-2.jpg" alt="upcoming4">
+                        <div class="ranking-info">
+                            <h4>Viland Saga</h4>
+                            <p>Estréia: Indefinido</p>
+                        </div>
+                    </div>
+                    <div class="ranking">
+                        <img src="img/jigokuraku.jpg" alt="upcoming5">
+                        <div class="ranking-info">
+                            <h4>Jigokuraku</h4>
+                            <p>Estréia: Indefinido</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+    </section>
+
+    <!--5- rodapé-->
+    <footer>
+        <section class="footer-banner">
+            <figure class="footer-contact">
+                <img src="./img/twitter.png" alt="twitter">
+                <img src="./img/instagram.png" alt="instagram">
+                <img src="./img/facebook.png" alt="facebook">
+                <img src="./img/youtube.png" alt="youtube">
+            </figure>
+            <nav class="footer-politics">
+                <h6>Política de privacidade</h6>
+                <h6>Política de direitos autorais</h6>
+            </nav>
+        </section>
+    </footer>
+
+    <!--link javascript-->
+    <script src="https://kit.fontawesome.com/2915259930.js" crossorigin="anonymous"></script>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+    <!--função botão-->
+    <script>
+        function trailer() {
+            window.open("https://www.youtube.com/watch?v=b8Cb_hRmnTM");
+        }
+    </script>
+
+</body>
+</html>

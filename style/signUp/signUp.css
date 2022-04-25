@@ -1,0 +1,293 @@
+/*definir variáveis*/
+:root {
+    --roxo: rgb(134, 12, 201);
+    --preto: rgb(34, 34, 34);
+}
+
+/*zerar e definir elementos*/
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--preto);
+    color: white;
+    font-family: 'Arial', Times, serif;
+}
+
+/*1- cabeçalho*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0.4rem 2rem;
+}
+
+header h1 {
+    color: var(--roxo);
+    font-family: 'Arial black';
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+header nav a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: 0.3s all;
+
+    margin-left: 2rem;
+}
+
+header nav a:hover {
+    color: var(--roxo);
+}
+
+header .signUp {
+    background-color: var(--roxo);
+    font-weight: bold;
+    border: 0.15rem solid var(--roxo);
+    border-radius: 1rem;
+    padding:0.9rem;
+}
+
+header .signUp:hover {
+    color: white;
+}
+
+/*2- formulário*/
+main {
+    padding: 1rem 0;
+}
+
+.section-signUp {
+    text-align: center;
+}
+
+.section-signUp h2 {
+    font-size: 27px;
+
+    margin-bottom: 0.5rem;
+}
+
+.section-signUp h3 {
+    color: rgb(121, 98, 123);
+    font-size: 16px;
+    text-align: center;
+    
+    margin-bottom: 2.5rem;
+}
+
+main {
+    height: 55rem;
+}
+
+form {
+    background-color: rgba(65, 50, 69, 0.852);
+
+    position: absolute;	
+    left: 50%;
+    transform: translatex( -50%);
+
+    display: flex;
+    flex-direction: column;
+
+    height: 46rem;
+    width: 36rem;
+    border-radius: 0.7rem;
+}
+
+form .container {
+    width: 80%;
+    height: 85%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-contact, .container-pwd {
+    background-color: rgb(178, 133, 184);
+
+    border-radius: 0.6rem;
+
+    padding: 1rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-contact input {
+    border-color: rgb(178, 133, 184);
+	border-radius: 0.7rem;
+    padding: 0.2rem 1rem;
+    width: 55%;
+    font-size: 14px;
+}
+
+.container-pwd {
+    margin-bottom: 2rem;
+}
+
+.container-pwd input {
+    border-color: rgb(178, 133, 184);
+	border-radius: 0.7rem;
+    padding: 0.2rem 1rem;
+}
+
+.container-pwd input[type='password'] {
+    font-size: 14px;
+    width: 55%;
+}
+
+.container-pwd input[type='checkbox'] {
+    font-size: 4px;
+    width: 5%;
+
+    margin-left: 4rem;
+}
+
+.container-name input {
+    margin-bottom: 1rem;
+} 
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.container-submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border:none;
+}
+
+input[type='submit'] {
+    background-color: rgb(178, 133, 184);
+    border-radius: 0.9rem;
+    cursor: pointer;
+
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50%;
+    height: 2.3rem;
+
+    margin-bottom: 4rem;
+}
+
+input[type='submit']:hover {
+    background-color: var(--roxo);
+}
+
+.container-submit a {
+    color: white;
+    font-size: 13px;
+}
+
+.container-submit a:hover {
+    color: gray;
+}
+
+/*tablet*/
+@media screen and (max-width: 1024px){
+    .section-signUp h3 {
+        font-size: 16px;
+    
+        margin-left: 12rem;
+        margin-right: 12rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/*mobile*/
+@media screen and (max-width: 760px) {
+    /*1- cabeçalho*/
+    header {
+        flex-direction: column;
+    }
+    
+    header h1 {
+        font-size: 2.1rem;
+    }
+
+    header nav {
+        margin-top: 0.5rem;
+    }
+
+    header nav a {
+        font-size: 17px;
+
+        margin-left: 1rem;
+    }
+
+    header .signUp {
+        background-color: var(--preto);
+        border: none;
+        padding: 0rem;
+        font-weight: normal;
+    }
+
+    /*2- Formulário*/
+    .section-signUp h3 {
+        font-size: 16px;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        
+        margin-bottom: 2.5rem;
+    }
+
+    main {
+        height: 70rem;
+    }
+    
+    form {
+        width: 100%;
+        height: 57rem;
+    }
+
+    form .container {
+        width: 95%;
+    }
+
+    .container-contact input {
+        padding: 0.5rem 0.5rem;
+        width: 100%;
+        font-size: 20px;
+    }
+    
+    .container-pwd input[type='password'] {
+        padding: 0.5rem 0.5rem;
+        width: 35%;
+        font-size: 20px;
+    }
+
+    .container-pwd input[type='checkbox'] {
+        font-size: 4px;
+        width: 5%;
+
+        margin-left: 3rem;
+    }
+    
+    label {
+        font-size: 20px;
+        
+        margin-bottom: 0.8rem;
+    }
+
+    input[type='submit'] {
+        font-size: 23px;
+    
+        margin-bottom: 3rem;
+    }
+    
+    .container-submit a {
+        font-size: 15px;
+    }
+}
